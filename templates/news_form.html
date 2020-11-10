@@ -1,0 +1,43 @@
+<h1>編輯最新消息</h1>
+<script src="class/ckeditor/ckeditor.js"></script>
+<form action="news_tool.php" method="post" class="form-horizontal" role="form" enctype="multipart/form-data">
+    <div class="form-group">
+        <label class="col-md-2 control-label">消息標題：</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" name="news_title" id="news_title" placeholder="請輸入商品名稱" value="{$news.news_title}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-2 control-label">消息內容：</label>
+        <div class="col-md-10">
+            <textarea class="form-control" name="news_content" id="news_content" placeholder="請輸入商品內容">{$news.news_content}</textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-2 control-label">商品圖片：</label>
+        <div class="col-md-10">
+            <input type="file" name="news_pic" id="news_pic">
+            {if isset($news.pic)}
+                <img src="{$news.pic}" alt="{$news.news_title}">
+            {/if}
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            {if isset($news.news_sn) and $news.news_sn > 0}
+                <input type="hidden" name="op" value="update_news">
+                <input type="hidden" name="news_sn" value="{$news.news_sn}">
+            {else}
+                <input type="hidden" name="op" value="insert_news">
+            {/if}
+            <button type="submit" class="btn btn-primary" >儲存消息</button>
+        </div>
+    </div>
+</form>
+
+<script>
+    CKEDITOR.replace( 'news_content' );
+</script>

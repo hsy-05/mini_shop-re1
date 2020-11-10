@@ -1,0 +1,113 @@
+body{
+  background-image:  url('images/bg.jpg');
+  font-family: 微軟正黑體;
+}
+
+.container{
+  background-color: white;
+}
+
+#shop_head{
+  margin-bottom: 15px;
+}
+
+#shop_main{
+  min-height: 200px;
+}
+
+#shop_foot{
+ background-color:rgb(92, 79, 61);
+ color: #fff;
+ padding: 30px;
+ line-height: 1.8;
+ margin: 15px 0px;
+}
+
+.panel-default .panel-heading {
+  border:none;
+  font-weight:bold;
+  color: #fff;
+  background-color: rgb(126, 101, 64) !important;
+}
+
+.panel-info .panel-heading {
+  border:none;
+  font-weight:bold;
+  color: #fff;
+  background-color: rgb(139, 116, 81) !important;
+}
+
+.btn-block{
+  border:none;
+  color: #fff;
+  background-color:rgb(151, 133, 107) !important;
+}
+
+.btn-block:hover{
+  font-weight:bold;
+  color: #fff;
+  background-color:rgb(110, 93, 69) !important;
+}
+
+.btn-link{    /*  註冊  */
+  font-weight:bold;
+  color:rgb(92, 79, 61) !important;
+}
+
+.alert-success{   /*  歡迎光臨  */
+  border:none;
+  background-color:rgb(238, 238, 238) !important;
+  color:rgb(77, 77, 77);
+  font-weight:bold;
+}
+
+.btn-warning{    /*  編輯商品  */
+  background-color:rgb(69, 141, 75) !important;
+}
+.btn-warning:hover{    /*  編輯商品  */
+  font-weight:bold;
+  background-color:rgb(13, 119, 22)  !important;
+}
+
+.btn-danger{      /*  刪除商品  */
+  background-color:rgb(173, 57, 53) !important;
+}
+.btn-danger:hover{      /*  刪除商品  */
+  font-weight:bold;
+  background-color:rgb(156, 50, 18) !important;
+}
+
+
+.btn-light{
+  color:white !important;
+  background-color:rgb(126, 105, 76) !important;
+}
+.btn-light:hover{
+  color:white !important;
+  background-color:rgb(77, 67, 63) !important;
+}
+
+.btn-primary:hover{  /*  已出貨  */
+  font-weight:bold;
+}
+
+/*  圖片放大  */
+.box{
+	overflow: hidden;
+}
+
+.imageHov{
+  width: 100%;
+	transition:  1.6s;
+}
+
+.imageHov:hover{
+  transform: scale(1.3);
+}
+
+.goodsTitle:hover{   /*  商品名稱  */
+  font-weight:bold;
+  
+}
+
+

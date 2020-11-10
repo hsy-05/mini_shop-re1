@@ -1,0 +1,13 @@
+<div class="alert alert-success">
+  {$login_user.user_name}您好！歡迎光臨 {$shop_name}
+</div>
+<a href="index.php" class="btn btn-block ">回首頁</a>
+<a href="user.php?op=user_display&user_sn={$login_user.user_sn}" class="btn btn-block ">我的帳號</a>
+{if $isUser}
+    <a href="bill.php" class="btn btn-block btn-block">我的訂單</a>
+{/if}
+{if $isAdmin}
+    <a href="tool.php?op=goods_form" class="btn btn-block ">發布商品</a>
+    <a href="news_tool.php?op=news_form" class="btn btn-block ">發布最新消息</a>
+{/if}
+<a href="user.php?op=user_logout" class="btn btn-block ">登出</a>
